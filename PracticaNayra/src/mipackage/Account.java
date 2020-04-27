@@ -7,7 +7,7 @@ package mipackage;
 
 /**
  *
- * @author Nayra Deniz
+ * @author Mikel Conde
  */
 public class Account {
 
@@ -48,17 +48,17 @@ public class Account {
 		this.ccc = ccc;
 	}
 
-	// Método que me devuelve el saldo disponible en cada momento
+	// MÃ©todo que me devuelve el saldo disponible en cada momento
 	public double disponible() {
 		return balance;
 	}
 
 	/*
-	 * Método para ingresar cantidades en la cuenta. Modifica el saldo.
+	 * MÃ©todo para ingresar cantidades en la cuenta. Modifica el saldo.
 	 */
 	public void ingresar(double cantidad) throws Exception {
 		if (cantidad < 0)
-			throw new Exception("No se puede ingresar una cantidad negativa");
+			throw new Exception("No se puede ingresar una cantidad negativa te enteras");
 		balance = balance + cantidad;
 	}
 
